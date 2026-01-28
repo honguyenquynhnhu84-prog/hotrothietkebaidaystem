@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hỗ trợ Thiết kế Bài Dạy STEM - Toán học</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            margin-bottom: 40px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 30px 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .github-button {
+            background: linear-gradient(135deg, #24292e 0%, #4a5568 100%);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin: 30px 0 20px;
+            font-size: 2em;
+        }
+        
+        ul {
+            list-style-position: inside;
+            margin: 20px 0;
+        }
+        
+        li {
+            padding: 10px 0;
+            font-size: 1.1em;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px;
+            font-size: 1em;
+        }
+        
+        .demo-section {
+            background: #f0f4ff;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            .main-content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📐 Hỗ trợ Thiết kế Bài Dạy STEM</h1>
+            <p>Công cụ AI thông minh hỗ trợ giáo viên soạn giáo án STEM Toán học theo CV 3089</p>
+            <div>
+                <a href="#" class="cta-button" id="app-link">🚀 Truy cập Ứng dụng</a>
+                <a href="https://github.com/honguyenquynhnhu84-prog/hotrothietkebaidaystem" class="cta-button github-button" target="_blank">💻 Xem trên GitHub</a>
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <h2>✨ Tính năng nổi bật</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Thông minh</h3>
+                    <p>Sử dụng Google Gemini AI để tạo giáo án chất lượng cao, phù hợp với CV 3089</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>Xuất File Word</h3>
+                    <p>Tự động định dạng chuẩn Times New Roman, sẵn sàng in ấn và nộp</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Nhanh chóng</h3>
+                    <p>Chỉ cần vài phút để có một giáo án STEM hoàn chỉnh với 5 hoạt động</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Theo chuẩn CV 3089</h3>
+                    <p>Tuân thủ đúng quy định của Bộ Giáo dục về dạy học STEM</p>
+                </div>
+            </div>
+            
+            <div class="demo-section">
+                <h2>🎓 Dành cho ai?</h2>
+                <ul>
+                    <li>👨‍🏫 Giáo viên Toán học các cấp (lớp 6-9)</li>
+                    <li>📚 Chuyên viên giáo dục nghiên cứu STEM</li>
+                    <li>🏫 Trường học muốn triển khai dạy học STEM</li>
+                    <li>🎯 Sinh viên sư phạm thực hành giảng dạy</li>
+                </ul>
+                
+                <h2>📋 Cấu trúc giáo án</h2>
+                <ul>
+                    <li>✅ Mục tiêu bài học (Kiến thức, Kỹ năng, Năng lực)</li>
+                    <li>✅ Thiết bị dạy học và học liệu</li>
+                    <li>✅ Tiến trình 5 hoạt động theo CV 3089</li>
+                    <li>✅ Phiếu học tập cho học sinh</li>
+                    <li>✅ Bảng rubric đánh giá chi tiết</li>
+                </ul>
+            </div>
+            
+            <h2>🚀 Bắt đầu ngay</h2>
+            <p style="font-size: 1.1em; text-align: center; margin: 30px 0;">
+                Click vào nút "Truy cập Ứng dụng" ở trên để bắt đầu soạn giáo án STEM của bạn!
+            </p>
+        </div>
+        
+        <footer>
+            <p>💜 Phát triển bởi <strong>honguyenquynhnhu84-prog</strong></p>
+            <p>Powered by Google Gemini AI & Streamlit</p>
+            <p>© 2026 - Dự án mã nguồn mở</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Cập nhật link này sau khi deploy lên Streamlit Cloud
+        const streamlitAppUrl = 'YOUR_STREAMLIT_CLOUD_URL'; // Thay bằng URL Streamlit Cloud
+        
+        document.getElementById('app-link').addEventListener('click', function(e) {
+            if (streamlitAppUrl === 'YOUR_STREAMLIT_CLOUD_URL') {
+                e.preventDefault();
+                alert('Ứng dụng đang được deploy. Vui lòng kiểm tra lại sau hoặc xem hướng dẫn trên GitHub!');
+            } else {
+                this.href = streamlitAppUrl;
+            }
+        });
+    </script>
+</body>
+</html>
