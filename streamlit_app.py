@@ -7,13 +7,18 @@ import io
 import os
 
 # --- CẤU HÌNH API GEMINI ---
+API_KEY = ""
 try:
     API_KEY = st.secrets["GOOGLE_API_KEY"]
-except:
-    API_KEY = os.getenv("GOOGLE_API_KEY", "")
+except Exception as e:
+    try:
+        API_KEY = os.getenv("GOOGLE_API_KEY", "")
+    except:
+        pass
 
 if not API_KEY:
     st.error("❌ Lỗi: Chưa cấu hình API Key. Vui lòng thêm GOOGLE_API_KEY vào secrets hoặc biến môi trường.")
+    st.info("💡 Kiểm tra file .streamlit/secrets.toml đã tồn tại và có định dạng đúng chưa.")
     st.stop()
 
 genai.configure(api_key=API_KEY)
