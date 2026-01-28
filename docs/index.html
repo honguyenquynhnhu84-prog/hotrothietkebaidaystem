@@ -146,7 +146,6 @@
             <p>Công cụ AI thông minh hỗ trợ giáo viên soạn giáo án STEM Toán học theo CV 3089</p>
             <div>
                 <a href="#" class="cta-button" id="app-link">🚀 Truy cập Ứng dụng</a>
-                <a href="https://github.com/honguyenquynhnhu84-prog/hotrothietkebaidaystem" class="cta-button github-button" target="_blank">💻 Xem trên GitHub</a>
             </div>
         </header>
         
@@ -211,15 +210,38 @@
     </div>
     
     <script>
-        // Cập nhật link này sau khi deploy lên Streamlit Cloud
-        const streamlitAppUrl = 'YOUR_STREAMLIT_CLOUD_URL'; // Thay bằng URL Streamlit Cloud
+        // TODO: Cập nhật URL này sau khi deploy lên Streamlit Cloud
+        // Hướng dẫn: 
+        // 1. Deploy app lên https://share.streamlit.io
+        // 2. Copy URL của app (VD: https://your-app-name.streamlit.app)
+        // 3. Thay thế 'DEPLOY_YOUR_APP_FIRST' bằng URL đó
+        const streamlitAppUrl = 'DEPLOY_YOUR_APP_FIRST';
         
         document.getElementById('app-link').addEventListener('click', function(e) {
-            if (streamlitAppUrl === 'YOUR_STREAMLIT_CLOUD_URL') {
-                e.preventDefault();
-                alert('Ứng dụng đang được deploy. Vui lòng kiểm tra lại sau hoặc xem hướng dẫn trên GitHub!');
+            e.preventDefault();
+            
+            if (streamlitAppUrl === 'DEPLOY_YOUR_APP_FIRST') {
+                // Hiển thị hướng dẫn nếu chưa deploy
+                const message = `📋 HƯỚNG DẪN DEPLOY ỨNG DỤNG:\n\n` +
+                    `1. Truy cập: https://share.streamlit.io\n` +
+                    `2. Đăng nhập bằng GitHub\n` +
+                    `3. Click "New app" và điền:\n` +
+                    `   • Repository: honguyenquynhnhu84-prog/hotrothietkebaidaystem\n` +
+                    `   • Branch: main\n` +
+                    `   • File: streamlit_app.py\n` +
+                    `4. Trong "Advanced settings" > "Secrets", thêm:\n` +
+                    `   GOOGLE_API_KEY = "AIzaSyBSiIHKvvsY2EzMLZkkDY-Vw-hvTgYiPmU"\n\n` +
+                    `5. Click "Deploy!"\n\n` +
+                    `📖 Xem hướng dẫn chi tiết tại:\n` +
+                    `https://github.com/honguyenquynhnhu84-prog/hotrothietkebaidaystem/blob/main/DEPLOY_GUIDE.md`;
+                
+                alert(message);
+                
+                // Chuyển đến trang hướng dẫn
+                window.open('https://github.com/honguyenquynhnhu84-prog/hotrothietkebaidaystem/blob/main/DEPLOY_GUIDE.md', '_blank');
             } else {
-                this.href = streamlitAppUrl;
+                // Nếu đã cấu hình URL, chuyển đến app
+                window.open(streamlitAppUrl, '_blank');
             }
         });
     </script>
